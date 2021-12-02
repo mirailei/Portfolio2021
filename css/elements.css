@@ -673,7 +673,7 @@ body.filtering .grid .item {
   }
 }
 
-.grid .item .caption .tag {
+.grid .item .caption {
   margin: 10px 0 20px;
   font-size: 1.0em;
   letter-spacing: 2px;
@@ -682,6 +682,17 @@ body.filtering .grid .item {
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+
+.tag {
+  margin: 10px 0 0px;
+  font-size: 1.0em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Nexa Bold", Verdana, sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 
 @media screen and (max-width: 768px) {
   .grid .item .caption .tag {
@@ -1033,4 +1044,13 @@ ul.tag-list li {
 .label:hover {
   opacity: .5;
   color: #000 !important;
+}
+
+.tagb{
+  background-color: rgb(245, 245, 245);
+  margin-left:0px;
+  border:none;
+  color:rgb(153, 153, 153);
+  border-radius: 20px;
+  margin-inline-end: 5px;
 }
