@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yuxuan Lei</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="css/core.css">
+  <link rel="stylesheet" type="text/css" href="css/elements.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png?version=1"> -->
+</head>
+
+<body class="preload">
+  <div class="container-fluid">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-10">
+            <a href="https://architecture.mit.edu/subject/spring-2020-4154-3" class="brand">
+              <div class="author">Yuxuan Lei
+            </a>
+          </div>
+          <a href="index.html" class="brand">
+            <div class="title">PORTFOLIO</div>
+          </a>
+        </div>
+      </div>
+  </div>
+  </header>
+  <section class="intro">
+    <div class="container">
+      <ul class="filters">
+        <li> <a href="index.html" class="filter">Back Home</a></li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row grid blog">
+        <div class="inner">
+          <div class="thumb">
+            <div class="author">
+              <div class="item col-xs-6 xxx">
+                <p id="big_tit">
+                  O&O: A DIY toolkit for designing and rapid prototyping olfactory interfaces
+                </p>
+                <p>O&O (abbreviation of Open-source & Olfaction) can help a wide range of users (from novice to expert)
+                  to design and rapidly prototype their own olfactory application ideas. These prototypes can support
+                  them in quickly validating ideas, experimenting with them or even using them in real life.</p>
+              </div>
+              <div class="item col-xs-1 xxx">
+              </div>
+              <div class="item col-xs-5 xxx">
+                <ul class="ulnone">
+                  <li class="linone">
+                    <span class="capleft">Role</span>
+                    <span class="capright">Project Owner</span>
+                  </li>
+                  <hr>
+                  <li class="linone">
+                    <span class="capleft">Director</span>
+                    <span class="capright">Qi Lu</span>
+                  </li>
+                  <hr>
+                  <li class="linone">
+                    <span class="capleft">Link</span>
+                    <span class="capright"><button class="link"><a href="https://chi2022.acm.org/" class="link">Accepted
+                          by CHI'2022</a> </button></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="item col-xs-12 video">
+                <iframe class="video" src="https://www.youtube.com/embed/xzJvtODH2T8" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe> allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture"
+                allowfullscreen></iframe>
+              </div>
+              <div class="item col-xs-12 ">
+                <p id="tit">INTRODUCTION</p>
+                <p>Previous work on olfactory interfaces design and development helped explore the possibilities of
+                  using smell
+                  sense in HCI and to engage a broader community to join in the relevant research. However, the design,
+                  implementation, and applications of theseworks are not easily modified or extended. To further lower
+                  the barrier of entry to olfactory interface design and to facilitate rapid prototyping, we propose
+                  O&O,
+                  a modular olfactory interface DIY toolkit. The toolkit contains: <code>Scent Delivery Kit</code>,
+                  supporting most common
+                  vaporization and transmission techniques used in this area; <code>Cardboard Structure Kit</code>,
+                  handling the structures
+                  of different functional modules; <code>Design Manual</code>, assisting design thinking and introducing
+                  the toolkit itself.
+                  We organized a formal workshop with19 participants and four solo DIY trials to evaluate its usability
+                  and to
+                  explore how users engage in olfactory interface design, theircreations using the toolkit in short/long
+                  periods,
+                  and their suggestions for the toolkit. Finally, Design implications were discussed for further
+                  research.</p>
+              </div>
+              <div class="item col-xs-12 ">
+                <img src="/images/portfolio/hci10/overview.jpg" class="imgitem">
+                <div class="notation">Toolkit Overview: a) Scent Generation Kit, a-1: electronic modules, a-2: Arduino
+                  boards,
+                  a-3: driver modules, a-4: outputcomponents, a-5: odor sources, a-6: batteries, b) Module construction
+                  kit,
+                  c) Design manual.</p>
+                </div>
+              </div>
+
+              <div class="item col-xs-12 ">
+                <p id="tit">SCENT GENERATION KIT</p>
+                <p class="subtit">1 | Driver Modules</p>
+                <img src="/images/portfolio/hci10/circuit.jpg" class="imgitem">
+                <p>The toolkit contains two sets of driver modules for <code>ultrasonic atomizer</code> and components
+                  supporting <code>PWM control</code>
+                  (fan, heater, air pump, motor). All modules support <code>manual</code> and
+                  <code>program</code>control modes. Manual mode means that
+                  users can directly control the modules with passive switches(e.g. buttons), while program mode is
+                  controlled by Arduino programs.
+                  We have both basic (27mm * 33mm) and pro (33mm * 40mm) version of modules for each type of output
+                  components.
+                  To further reduce memory costs, all driver modules have a <code>unified layout</code> with control
+                  ports in the lower-left corner,
+                  power ports in the lower-right corner, and output ports in the upper-right corner. The control ports
+                  of the two basic
+                  modules are identical to the standard IO ports (digital I/O, VCC, GND) of the Arduino module.</p>
+
+                <p class="subtit">2&3 | Optional Accessories & Output Components</p>
+                <img src="/images/portfolio/hci10/output.jpg" class="imgitem">
+                <p>The toolkit provides optional accessories including <code>scent sources</code>, <code>control components</code>,
+                  and <code>connection parts</code> to
+                  ease the scent generation process. It also contains four categories of output components:
+                  <code>atomizers</code>,<code>heaters</code>,<code>fans</code>,and<code>air pumps</code>.The project tested
+                  and offered multiple components with various specifications for each category. Users may also adopt their own.
+                </p>
+              </div>
+
+              <div class="item col-xs-12 ">
+                <p id="tit">MODULE CONSTRUCTION KIT</p>
+                <p class="subtit">1 | Size and Shape</p>
+                              <img src="/images/portfolio/hci10/modules.jpg" class="imgitem">
+              <p>A rich abstraction of modules is crucial for any creation. The toolkit provides four sizes of modules 
+                for every application category depicted in the design section (70mm, 40mm, 30mm, 20mm) and provided cardboard
+                 templates with various primitive form or self-design options (square, cylinder, flat, polyhedron ,or free-design). 
+                 Notice: the project proposed the "polyhedron" module to provide an inspiration for creating new structures. 
+                 Considering the cognitive load for novice users and the complexity of the module structure, we did not 
+                 provide physical materials for this module in the subsequent demos and studies.
+              </p>
+
+              <p class="subtit">2 | Structure and Assembly</p>
+                              <img src="/images/portfolio/hci10/exploded.jpg" class="imgitem">
+              <p>The three scent generation technologies rely on different technical principles in system operation and 
+                require customized modular structures for implementation.
+              </p>
+
+              <p class="subtit">3 | Transmission Module</p>
+              <img src="/images/portfolio/hci10/transmission.jpg" class="imgitem">
+              <p>The toolkit designs five types of square modules based on the <code>main characteristics of odor transmission</code>
+                (distance, volume, patterns, horizontal directions, vertical directions. These modules can help users adapt to 
+                different transmission needs and can also act as inspiration for more transmission functions. 
+              </p>
+              <p class="subtit">4 | Cardboard Handling Measures</p>
+                              <img src="/images/portfolio/hci10/handling.jpg" class="imgitem">
+              <p>Traditional olfactory interfaces are usually constructed with well-textured materials such as 3D printed plastics, 
+                metal, and wood. Designing and prototyping olfactory interfaces using cardboard is a challenge because the fiber 
+                texture is not well-suited for "association with odor" in many aspects, such as <code>water resistance</code> ,
+                 <code>absorption of odor</code>, <code>heat resistance</code>. Here the design provide some proven solutions 
+                 to these concerns.
+              </p>
+              </div>
+
+              
+              <div class="item col-xs-12">
+                <p id="tit">DESIGN MANUAL</p>
+                <img src="/images/portfolio/hci10/design.png" class="imgitem">
+                <br><br>
+                <iframe width="100%" height="700px" src="https://www.youtube.com/embed/HgUQcHXih2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Prototyping is both a skill and a mindset. The aptitude to rapidly generate 
+                  and evolve ideas is a prerequisite for creating and engaging human-centered 
+                  olfactory interfaces. When users feel limited in their knowledge and ideas
+                  about the olfactory interaction realm, the design manual walks them through 
+                  systematic brainstorm. We structured the design manual into five corresponding 
+                  sections by adopting the popular five-stage process of design thinking, empathize, 
+                  define(problem), ideate, prototype, and test.</p>
+              </div>
+
+        
+              <div class="item col-xs-12">
+                <p id="tit">DEMO PRESENTATION</p>
+                <img src="/images/portfolio/hci10/demo.jpg" class="imgitem">
+                <div class="notation">Demo presentations: a) an overview, b) olfactory mask, c) olfactory watch,
+                   d) Olfactory Coffee Package, e) Olfactory Augmented VR, f) On-table Olfactory Displays</div>
+                <p>In all, the project built <code>15 demostration prototypes</code>. Here we highlighted five prototypes illustrating how 
+                  O&O can be employed to support the design and prototyping phase of olfactory applications. 
+                  Each prototype relates to the five common olfactory interface forms summarized in the design 
+                  section and can easily be extended with further design and development.</p>
+              </div>
+
+              <div class="item col-xs-12">
+                <p id="tit">STUDY 1: WORKSHOP</p>
+                <img src="/images/portfolio/hci10/study.jpg" class="imgitem">
+                <p>To gain preliminary understanding of the usability of the toolkit, how and what users could build with O&O and 
+                  to gain issues and feedback, we conducted a formal workshop with <code>19</code> participants in <code>6</code>
+                  groups. Our findings were used to refine the toolkit as well as our further evaluation approach.</p>
+                  <p>The study used a mixed-methods approach to analyze the collected data, including <code>pre-and post-study questionnaires</code>,
+                    <code>transcribed interviews</code>, <code>video recordings</code>, and <code>final prototypes</code> presented by each group.
+                     Firstly, my director and I  analyzed the questionnaire results to obtain the quantitative evaluation of the toolkit 
+                     and the impact of the user's previous expertise (DIY, programming) on the rating. 
+                     Secondly, we conducted thematic coding and classification of the interview and video content, 
+                     and used the results to derive qualitative findings and the corresponding discussion. </p>
+                  <img src="/images/portfolio/hci10/study2.jpg" class="imgitem">
+                  <div class="notation">The prototypes made in the workshop: a) consolation mask, b) olfactorization piano, 
+                    c) scent phone case, d) plant wateringreminder, e) scent speaker, f) room model with odor display.</div>
+              </div>
+
+              <div class="item col-xs-12">
+                <p id="tit">STUDY 2: DIY ON SOLO</p>
+                <p>Through the first workshop, we learned that users need more time to learn, design and build with O&O, 
+                  especially for participants without programming knowledge. Allowing users to carry out DIY projects 
+                  for longer periods (for example, 3 to 4 days) independently can provide them with a greater creative
+                   space and freedom.</p>
+                   <img src="/images/portfolio/hci10/diyonsolo.jpg" class="imgitem">
+                     <div class="notation">Prototypes built in Study 2: a) olfaction training device, b) auto-fill olfactory display, 
+                       c) smell-augmented "Fruit Ninja" game d) "Do-not-disturb" alarm clock.</div>
+              </div>
+
+              <div class="item col-xs-12">
+                <p id="tit">MORE STUDY AND FINDINGS</p>
+                  <img src="/images/portfolio/hci10/banner.jpg" class="imgitem">
+                <p>Check at the <code>coming</code> paper.</p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  </div>
+  </div>
+  </section>
+  <footer>
+
+  </footer>
+  </div>
+  <script src="js/assets/jquery.js"></script>
+  <script src="js/assets/imagesloaded.pkgd.min.js"></script>
+  <script src="js/assets/packery.pkgd.min.js"></script>
+  <script src="js/functions.js"></script>
+
+</body>
+
+</html>
