@@ -16803,10 +16803,20 @@ Made by Themanoid
 }
 
 
+
 #livebutton{
   display: block; 
   width: 100%;
   margin: auto;
+  background-color: #e6e6e6;
+  padding: 10px;
+  border: none;
+  color:rgb(54, 54, 54);
+}
+#livebutton:hover{
+  text-decoration-line: none;
+  color:white;
+  background-color: rgba(250, 171, 0, 0.856);
 }
 
 .video-container {
@@ -16866,7 +16876,8 @@ font-weight: bold;
   font-size: 28px;
   border-top:3px solid #204d74;
   font-weight: bold;
-  text-align:justify;
+  text-align:left;
+
 }
 .subtit{
   padding-top: 15px;
@@ -16897,3 +16908,22 @@ font-weight: bold;
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-y02l{border-color:inherit;color:#00E;text-align:left;text-decoration:underline;vertical-align:top}
 
+.citation{
+  background-color: #f1f1f1;
+  padding: 30px;
+  padding-bottom: 20px;
+  color: #222;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.citation p{
+ padding:0;
+ text-align: justify;
+}
+li{
+  font-family: roboto;
+  font-size: 15px;
+  color: #101010;
+  font-weight: 300;
+  padding: 5px;
+}
