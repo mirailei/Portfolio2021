@@ -133,7 +133,6 @@
                           </p>
 
 
-
                         <p class="subtit"> 01 | Upload Multi-Media Resources</p>
                         <p>MIT Design Heritage Platorm allows users to upload and manage <code>multimedia content</code> including <code>3D mesh models with 
                           textures</code> (i.e.,obj, glTF), <code>images</code>(i.e.,jpg, png, gif), and <code>videos</code> to a project archive. </p>
@@ -191,8 +190,58 @@
                           </table>
                           <br>
                           <p class="subtit"> 05 | Analytics: Data logging and reconstructing</p>
+                          <p>The program collected <code>device data</code> and <code>tracking log data</code>(about user behaviors). The usage data of the web application initiated 
+                            by the visitors on the museum floor logs the camera pose, tracks AR markers, and the activations of UI switches with a half-second interval. The
+                             camera pose (position and target) sampled relative to the binary markers, and logged 
+                             every half second sent back to Google Analytics data server.
+                            </p>
+                          <img src="images/portfolio/hci11/6.jpg" class="imgitem">
+                          <p>Data visualization in 3D scene shows the reconstructed and continuous camera pose of users</p>
+                          <iframe width="100%" height="700px" src="https://www.youtube.com/embed/OpvktpIk7XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                          
+                          <p class="subtit"> 06 | Findings</p>
+                          <p class="subsubtit"> ① AR Vs. Finger Mode</p>
+                          <p>The way the digital model is placed in AR has a measurable impact on the spatial distribution
+                            of typical viewing angles from which the visitors observe the model (Fig 3). Not only do the
+                            walls, floor and table around the exhibit impose physical restrictions on the visitor’s position,
+                            but viewers are only comfortable holding and looking through the smartphones in certain
+                            body poses. In contrast, the Finger-based mode gives users more freedom in choosing viewing angles, while curators get less control over the way the model is observed</p>
+                          <img src="images/portfolio/hci11/7.jpg" class="imgitem">
+                          <p class="notation"> Figure 5: The distributions of the visitors’ camera positions around the exhibit: the distribution for AR-mode (top) and the
+                            one for Finger-based mode (bottom) shown in the axon (left), section (middle) and plan views (right). Two virtual models
+                            are placed on the physical wall, while one is set on the table.</p>
+
+                            <img src="images/portfolio/hci11/9.jpg" class="imgitem">
+
+                            <p class="subsubtit"> ① Visiting Session</p>
+                            <p>Enriching contents by mixing virtual and physical exhibition media (3D models, 3D scans,
+                              videos, drawings), preparing multiple, user selectable scenes, and adding different interaction methods (AR mode and Finger-based mode) made the exhibit more engaging to the
+                              visitors as they seem to spend an additional amount of time to investigate them. Multiple
+                              scenes had a particularly pronounced impact in this exhibit.</p>
+                            <img src="images/portfolio/hci11/8.jpg" class="imgitem">
+                            <p class="notation">Table 1. Statistics from the data logged (at half second intervals) during the first 20 days of the exhibition in Kobe Prefectural Museum from July 11 to July 31 of 2021. Logged visits of less than 5 seconds (about 5% of the total visitor counts)
+                              are included although these outliers indicate visitors just testing the application without actually using it. The comparison
+                              among the blue and red cells shows the increase of the total viewing time while the time spent on the first scene stays
+                              approximately the same. The comparison among the blue and yellow cells shows the increase of the total viewing time
+                              while the time spent on the 3D viewing stays approximately the same. The comparison among the blue and green cells
+                              shows the increase of the total viewing time while the time spent on viewing in AR mode stays approximately the same.</p>
+                              <li> <code>Video clips:</code> 65% of the visitors watched videos (at least one of the 8 clips averaging 37 seconds long ranging from 9 to 97 seconds). Compared with people who did not watch any video, the total duration spent on the web app increased by about 40%, from 100 seconds to 142.
+                                People watching videos also looked at the 3D models longer (6 %) possibly encouraged by watching the video.
+                                </li>
+                                <li> <code>Switch Scenes: </code>The visitors stayed on the first scene for about 73 seconds, and about 50% of them tried the second and third scenes spending additional times. 
+                                  The visitors spent less time on each of the second and third scenes than the first scene. This may indicate less successful designs of the second and third scenes, or the constraint by the duration in which each visitor felt comfortable monopolizing the exhibit when others lined up waiting for their turns.
+                                  </li>
+                                  <li><code>AR Vs. Finger Mode:</code> Majority (77%) of people tried Finger-based viewing. People who did not use Finger mode stayed on AR mode for about 90 seconds, while Finger mode users stayed on this web app for about 60% longer.
+                                    This increase of the total viewing time is mostly to examine the model in Finger mode in addition to observing the model in AR. (The time spent on AR mode was not much different in these two groups.) 
+                                    </li>
+                            
+                          <p class="subtit">07 | Future Studies</p>
+                            <p>The log data collectable by this web app is a valuable resource for future studies to apply <code>Machine Learning</code>  process. 
+                              For instance:
+                              <li>Possibility to identify preference of people using the device, and optimize the design of the app and the curation of the scene composition such as media content arrangement and marker placement.</li> 
+                              <li>Possibility to identify what architectural features attracts people and use the analysis for synthetic visualization such as automated generation of a movie touring audience around a heritage site and buildings.</li> 
+                              </p>
+                                                      
 
 
 
